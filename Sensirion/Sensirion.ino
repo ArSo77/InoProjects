@@ -18,8 +18,6 @@ void loop()
 {
   tempSensor.measure(&temperature, &humidity, &dewpoint);
 
-
-
   Serial.print("{\"Temp\":");
   Serial.print(temperature);
   Serial.print(",\"Hum\":");
@@ -28,10 +26,5 @@ void loop()
   Serial.print(dewpoint);
   Serial.print("}");
 
-
-
-
-  
-  
-  delay(900);  
+  delay(900);
 }
