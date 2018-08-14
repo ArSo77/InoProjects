@@ -24,7 +24,13 @@ void loop()
   Serial.print(humidity);
   Serial.print(",\"Dew\":");
   Serial.print(dewpoint);
-  Serial.print("}");
+  Serial.print(",\"Data\":");
+  Serial.print("2018");
+  Serial.print(",\"CO\":");
+  Serial.print("0.66");
+  Serial.print(",\"Pressure\":");
+  Serial.print("1.66");
+  Serial.println("}");
 
   delay(900);
 }
